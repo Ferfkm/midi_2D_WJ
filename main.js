@@ -12,4 +12,10 @@ while(contador < listaDeTeclas.length){
     }
     contador = contador + 1;
     console.log(contador);
+
+    listaDeTeclas.onkeydown = function(evento){
+     if(evento.code === 'Space' || evento.code === 'Enter'){
+        listaDeTeclas.classList.add('ativa')
+     }
+    }
 }
